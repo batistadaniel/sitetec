@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnicos Brasil</title>
+    <style>
+        :root{
+            --bg-color: #f0edfa;
+            --main-color: rgb(22, 184, 62);
+            --main-color2: rgb(255, 225, 31);
+            --main-color3: rgb(22, 81, 184);
+            --main-color4: rgb(204, 203, 203);
+            --main-color5: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: var(--bg-color);
+        }
+
+        .cabecalho{
+            background-color: var(--main-color);
+            position: sticky;
+            z-index: 99;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            background-image: linear-gradient(to right, var(--main-color), var(--main-color2), var(--main-color3));
+            border-bottom: 5px solid var(--main-color4);
+            flex-wrap: wrap;
+        }
+
+        .cabecalho > h1{
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+        }
+
+        .cabecalho > #campo__pesquisar{
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+        }
+
+        #campo__pesquisar{
+            padding: 10px;
+            padding-left: 20px;
+            height: 20px;
+            width: 584px;
+            border-radius: 24px;
+            outline: none;
+            font-size: 20px;
+            border: none;   
+        }
+
+        #campo__pesquisar:focus {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+        }
+
+        .conteudo{
+            flex-wrap: wrap;
+            padding: 15px;  
+            padding-bottom: 45px;
+        }
+
+        .conteudo > fieldset{
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--main-color5);
+            width: 75%;     
+            min-height: 300px;
+            margin: 10px auto;
+            text-align: justify;
+            box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px, rgb(0 0 0 / 10%) 0px 8px 16px;
+        }
+
+        .cargo, .remuneracao, .atribuicoes, li, .contato__empresa, .requisito__vaga{
+            padding-bottom: 10px;
+        }
+
+        .conteudo > fieldset ul{
+            padding-left: 30px;
+        }
+
+        .conteudo > fieldset a{
+            text-decoration: none;
+        }
+
+        .conteudo > fieldset a:hover{
+            color: blue
+        }
+
+        .conteudo > fieldset a::before {
+            content: '\00A0\1F517';   
+        }
+
+        .rodape{
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, var(--main-color3), var(--main-color2), var(--main-color));
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Tecnicos Brasil</h1>
+
+        <input type="text" name="campo__pesquisar" id="campo__pesquisar" placeholder="Pesquisar Ex.: Técnico em Desenvolvimento de Sistemas">
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <fieldset>
+
+                <div class="cargo">
+                    <h1>Cargo: Técnico em Computação Gráfica</h1>
+                </div>
+
+                <div class="remuneracao">
+                    <h2>Remuneração: R$ 3.000,00 </h2>
+                </div>
+
+                <div class="atribuicoes">
+                    <h3>Atribuições:</h3>
+
+                    <ul>
+                        <li>Elaborar e implementar projetos de programação visual e lay-out para mídia digital e/ou impressa. <br></li>
+                        <li>Realizar a modelagem e edição de imagens, áudios e vídeos. <br></li>
+                        <li>Estruturar aplicações web e multimídia. <br></li>
+                        <li>Aplicar técnicas de desenho e pintura digital. <br></li>
+                        <li>Realizar a programação de objetos gráficos 2D e 3D. <br></li>
+                        <li>Realizar tratamento de imagens estáticas e em movimento que compõem estruturas de navegação em mídias digitais.<br></li>
+                        <li>Executar desenho técnico para elaboração de projetos, plantas e maquetes digitais.<br></li>
+                    </ul>
+                </div>
+
+                <div class="requisito__vaga">
+                    <h2>Requisitos da vaga</h2>
+                    <p>Certificado de conclusão de curso técnico, reconhecido pelo Ministério da Educação.</p>
+                </div>
+
+                <div class="contato__empresa">
+                    <h2>Contatos</h2>
+
+                    <a href="https://br.linkedin.com/jobs/computa%C3%A7%C3%A3o-gr%C3%A1fica-vagas?position=1&pageNum=0" target="_blank">www.emprego1.com.br/vagas</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="cargo">
+                    <h1>Cargo: Técnico em Desenvolvimento de Sistemas</h1>
+                </div>
+
+                <div class="remuneracao">
+                    <h2>Remuneração: R$ 3.500,00 </h2>
+                </div>
+
+                <div class="atribuicoes">
+                    <h3>Atribuições:</h3>
+
+                    <ul>
+                        <li>Desenvolver sistemas computacionais utilizando ambiente de desenvolvimento. <br></li>
+                        <li>Dimensionar requisitos e funcionalidades do sistema. <br></li>
+                        <li>Realizar testes funcionais de programas de computador e aplicativos. <br></li>
+                        <li>Manter registros para análise e refinamento de resultados. <br></li>
+                        <li>Executar manutenção de programas de computador e suporte técnico. <br></li>
+                        <li>Realizar modelagem de aplicações computacionais. <br></li>
+                        <li>Codificar aplicações e rotinas utilizando linguagens de programação específicas.<br></li>
+                        <li>Executar alterações e manutenções em aplicações e rotinas de acordo com as definições estabelecidas. <br></li>
+                        <li>Prestar apoio técnico na elaboração da documentação de sistemas. <br></li>
+                        <li>Realizar prospecções, testes e avaliações de ferramentas e produtos de desenvolvimento de sistemas. <br></li>
+                    </ul>
+                </div>
+
+                <div class="requisito__vaga">
+                    <h2>Requisitos da vaga</h2>
+                    <p>Certificado de conclusão de curso técnico, reconhecido pelo Ministério da Educação.</p>
+                </div>
+
+                <div class="contato__empresa">
+                    <h2>Contatos</h2>
+
+                    <a href="https://br.linkedin.com/jobs/t%C3%A9cnico-em-desenvolvimento-de-sistemas-vagas?position=1&pageNum=0" target="_blank">www.emprego2.com.br/vagas</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="cargo">
+                    <h1>Cargo: Técnico em Informática</h1>
+                </div>
+
+                <div class="remuneracao">
+                    <h2>Remuneração: R$ 3.000,00 </h2>
+                </div>
+
+                <div class="atribuicoes">
+                    <h3>Atribuições:</h3>
+
+                    <ul>
+                        <li>Desenvolver sistemas computacionais utilizando ambiente de desenvolvimento.<br></li>
+                        <li>Realizar modelagem, desenvolvimento, testes, implementação e manutenção de sistemas computacionais.<br></li>
+                        <li>Modelar, construir e realizar manutenção de banco de dados.<br></li>
+                        <li>Executar montagem, instalação e configuração de equipamentos de informática.<br></li>
+                        <li>Instalar e configurar sistemas operacionais e aplicativos em equipamentoscomputacionais.<br></li>
+                        <li>Realizar manutenção preventiva e corretiva de equipamentos de informática.<br></li>
+                        <li>Instalar e configurar dispositivos de acesso à rede e realizar testes de conectividade.<br></li>
+                        <li>Realizar atendimento help-desk.<br></li>
+                        <li>Operar, instalar, configurar e realizar manutenção em redes de computadores.<br></li>
+                        <li>Aplicar técnicas de instalação e configuração da rede física e lógica.<br></li>
+                        <li>Instalar, configurar e administrar sistemas operacionais em redes de computadores.<br></li>
+                        <li>Executar as rotinas de monitoramento do ambiente operacional.<br></li>
+                        <li>Identificar e registrar os desvios e adotar os procedimentos de correção.<br></li>
+                        <li>Executar procedimentos de segurança, pré-definidos, para ambiente de rede.<br></li>
+                    </ul>
+                </div>
+
+                <div class="requisito__vaga">
+                    <h2>Requisitos da vaga</h2>
+                    <p>Certificado de conclusão de curso técnico, reconhecido pelo Ministério da Educação.</p>
+                </div>
+
+                <div class="contato__empresa">
+                    <h2>Contatos</h2>
+
+                    <a href="https://br.linkedin.com/jobs/tecnico-informatica-vagas?position=1&pageNum=0" target="_blank">www.emprego3.com.br/vagas</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="cargo">
+                    <h1>Cargo: Técnico em Informática para internet</h1>
+                </div>
+
+                <div class="remuneracao">
+                    <h2>Remuneração: R$ 3.000,00 </h2>
+                </div>
+
+                <div class="atribuicoes">
+                    <h3>Atribuições:</h3>
+
+                    <ul>
+                        <li>Planejar e documentar aplicações para Web e dispositivos móveis.<br></li>
+                        <li>Desenvolver e organizar elementos estruturais e visuais de aplicações para Web e dispositivos móveis.<br></li>
+                        <li>Monitorar projetos de aplicações para Web e dispositivos móveis.<br></li>
+                        <li>Estruturar e implementar banco de dados para aplicações Web.<br></li>
+                        <li>Codificar aplicações para Web e dispositivos móveis.<br></li>
+                        <li>Publicar e testar aplicações para Web e dispositivos móveis.<br></li>
+                        <li>Documentar e realizar manutenção de aplicações para Web e dispositivos móveis.<br></li>
+                    </ul>
+                </div>
+
+                <div class="requisito__vaga">
+                    <h2>Requisitos da vaga</h2>
+                    <p>Certificado de conclusão de curso técnico, reconhecido pelo Ministério da Educação.</p>
+                </div>
+
+                <div class="contato__empresa">
+                    <h2>Contatos</h2>
+
+                    <a href="https://br.linkedin.com/jobs/tecnico-informatica-vagas?position=1&pageNum=0" target="_blank">www.emprego4.com.br/vagas</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="cargo">
+                    <h1>Cargo: Técnico em Manutenção e Suporte em Informática</h1>
+                </div>
+
+                <div class="remuneracao">
+                    <h2>Remuneração: R$ 4.000,00 </h2>
+                </div>
+
+                <div class="atribuicoes">
+                    <h3>Atribuições:</h3>
+
+                    <ul>
+                        <li>Realizar montagem, diagnóstico, manutenção e instalação de computadores.<br></li>
+                        <li>Instalar e configurar software (sistema operacional e aplicativos) para desktop e servidores.<br></li>
+                        <li>Realizar instalação e manutenção de redes de computadores.<br></li>
+                        <li>Realizar manutenção preventiva e corretiva de computadores e periféricos.<br></li>
+                        <li>Prestar assistência técnica aos usuários em relação à utilização dos serviços de TI.<br></li>
+                        <li>Auxiliar nas atividades de infraestrutura de TI, mantendo a disponibilidade de sistemas.<br></li>
+                        <li>Prestar suporte ao ambiente interno, instalação e configuração de sistemas operacionais, redes e impressoras.<br></li>
+                        <li>Identificar problemas e/ou dificuldades de acesso e utilização de aplicações.<br></li>
+                        <li>Acompanhar e avaliar os níveis de serviços prestados.<br></li>
+                        <li>Analisar a requisição ou problema apresentado, identificando a complexidade técnica para atuar na solução e direcionar para atendimento de acordo com nível técnico correspondente.<br></li>
+                        <li>Verificar os sistemas das requisições e incidentes na fila de atendimento e analisar a prioridade conforme a urgência de cada caso.<br></li>
+                        <li>Detectar e diagnosticar, pessoalmente, os sintomas apresentados pelo equipamento de um solicitante, fisicamente ou virtualmente, verificando as condições de funcionamento das instalações físicas e do sistema, para tomar as providências necessárias de acordo com o problema apresentado.<br></li>
+                        <li>Responder pela organização e controle de peças e equipamentos quando retirados do estoque, controlando a logística e movimentação deles.<br></li>
+                        <li>Configurar equipamentos para novos funcionários ou postos de trabalho, registrando os dados (protocolos de identificação, e-mail, perfil, dispositivos móveis) no equipamento destinado ao funcionário.<br></li>
+                        <li>Realizar constante manutenção nos equipamentos, substituindo componentes/periféricos quando necessário, visando garantir o funcionamento adequado.<br></li>
+                        <li>Recolher equipamentos usados (que não serão mais utilizados pelos funcionários), realizar a formatação e substituição de peças, otimizando o hardware (upgrade) com o objetivo de disponibilizar o equipamento a outro colaborador.<br></li>
+                        <li>Estabelecer comunicação oral e escrita para agilizar o trabalho, redigir documentação técnica e organizar o local de trabalho.<br></li>
+                    </ul>
+                </div>
+
+                <div class="requisito__vaga">
+                    <h2>Requisitos da vaga</h2>
+                    <p>Certificado de conclusão de curso técnico, reconhecido pelo Ministério da Educação.</p>
+                </div>
+
+                <div class="contato__empresa">
+                    <h2>Contatos</h2>
+
+                    <a href="https://br.linkedin.com/jobs/t%C3%A9cnico-em-manuten%C3%A7%C3%A3o-de-computadores-vagas?position=1&pageNum=0" target="_blank">www.emprego5.com.br/vagas</a>
+                </div>
+            </fieldset>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p><strong>© 2024 Tecnicos Brasil - Todos os direitos reservados.</strong></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
